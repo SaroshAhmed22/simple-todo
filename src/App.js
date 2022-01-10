@@ -8,8 +8,17 @@ const App = () => {
   const addItems = () => {
     console.log("Clicked")
 
-    setItems([...items, input])
+    if (input == null) {
+      alert("Please Insert")
+
+    }
+
+    else {
+      setItems([...items, input])
+    }
     setInput("")
+
+
   }
 
   // ! For Delete All
