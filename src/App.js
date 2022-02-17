@@ -41,8 +41,8 @@ const App = () => {
 
   return (
     <div>
-      <div id="container">
-        <h1>To-Do List Itemss <i className="fa fa-plus" onClick={addItems}    ></i></h1>
+      <div id="container" className='mt-5'>
+        <h1>To-Do List Items <i className="fa fa-plus" onClick={addItems}    ></i></h1>
         <input type="text" placeholder="Add New Todo" value={input} onChange={(e) => { setInput(e.target.value) }} />
 
         {
@@ -60,8 +60,10 @@ const App = () => {
 
 
       </div>
+      <div className='center'>
+        <button className=' btn btn-danger' onClick={removeAll}> Remove All</button>
 
-      <button className='btn btn-danger text-center' onClick={removeAll}> Remove All</button>
+      </div>
 
 
 
